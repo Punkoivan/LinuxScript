@@ -1,5 +1,10 @@
 #!/bin/bash
-# Translate text with Yandex API
+# Translate text with http://translate.yandex 
+#usage:
+#For translate en-ru exec srcipt without any parametres
+#for translate another language just add this language as parametres.
+#Example:
+#`./yandex_translate fr-en ` will translate French text from buffer to english
 text=`xclip -o`
 if [[ $# -eq 0 ]] 
 then
